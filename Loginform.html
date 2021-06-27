@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+
+        }
+        form{
+            border: 5px solid rgb(243, 240, 240);
+        }
+        input[type=text],input[type=password]{
+            width: 100%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            padding: 16px 8px;
+            margin: 10px 0;
+
+        }
+        button{
+            background-color: aquamarine;
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .formcontainer{
+            margin:25px 50px 12px ;
+        }
+        .container{
+            padding: 16px 0;
+            
+        }
+        span.psw{
+            float: right;
+            margin-right: 15px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1> Login Form</h1>
+        <div class="formcontainer">
+
+
+
+            <div class="container">
+                <label> <b>Username</b></label>
+                <input type="text" name="username" placeholder="Enter your name">
+
+                <label><b>Password</b></label>
+                <input type="password" name="pass" placeholder="Enter your password">
+            </div>
+
+
+            <button type="submit">Login</button>
+
+            <div class="container">
+                <label>
+                    <input type="checkbox" name="remember">Remember me
+                </label>
+                <span class="psw"><a href="#">Forget password</a></span>
+       
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
